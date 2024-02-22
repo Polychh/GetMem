@@ -13,19 +13,19 @@ struct CleanRepeatButton: View {
         HStack{
             Spacer()
             Button(action: {
-               action()
+                action()
             }) {
                 Text(Image(systemName:"repeat"))
                     .font(.title)
+                    .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.orange, .purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .padding(8)
+                    .background(.white)
+                    .overlay(content: {
+                        Circle()
+                            .stroke(.orange, lineWidth: 1)
+                    })
             }
-            .foregroundStyle(
-                LinearGradient(gradient: Gradient(colors: [.orange, .purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
         }
     }
 }
 
-#Preview {
-    CleanRepeatButton {
-        print("Done clean")
-    }
-}

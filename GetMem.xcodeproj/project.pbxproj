@@ -15,7 +15,7 @@
 		366B989E2B83AFD000BE5467 /* CleanRepeatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B989D2B83AFD000BE5467 /* CleanRepeatButton.swift */; };
 		366B98A12B84A78500BE5467 /* FavorityMems.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 366B989F2B84A78500BE5467 /* FavorityMems.xcdatamodeld */; };
 		366B98A32B84A9A600BE5467 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B98A22B84A9A600BE5467 /* PersistanceController.swift */; };
-		366B98A52B84B40900BE5467 /* FavoriteMems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B98A42B84B40900BE5467 /* FavoriteMems.swift */; };
+		366B98A52B84B40900BE5467 /* FavoriteMemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B98A42B84B40900BE5467 /* FavoriteMemsView.swift */; };
 		366B98A72B84B44B00BE5467 /* ContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B98A62B84B44B00BE5467 /* ContenView.swift */; };
 		366B98A92B84B9B700BE5467 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B98A82B84B9B700BE5467 /* FavoriteCell.swift */; };
 		36CD427C2B827400008304C2 /* GetMemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CD427B2B827400008304C2 /* GetMemApp.swift */; };
@@ -38,7 +38,7 @@
 		366B989D2B83AFD000BE5467 /* CleanRepeatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanRepeatButton.swift; sourceTree = "<group>"; };
 		366B98A02B84A78500BE5467 /* FavorityMems.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavorityMems.xcdatamodel; sourceTree = "<group>"; };
 		366B98A22B84A9A600BE5467 /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
-		366B98A42B84B40900BE5467 /* FavoriteMems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMems.swift; sourceTree = "<group>"; };
+		366B98A42B84B40900BE5467 /* FavoriteMemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMemsView.swift; sourceTree = "<group>"; };
 		366B98A62B84B44B00BE5467 /* ContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenView.swift; sourceTree = "<group>"; };
 		366B98A82B84B9B700BE5467 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		36CD42782B827400008304C2 /* GetMem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetMem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +72,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		366B98AD2B87AB5500BE5467 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36CD427D2B827400008304C2 /* MainView.swift */,
+				366B98A42B84B40900BE5467 /* FavoriteMemsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		36CD426F2B8273FF008304C2 = {
 			isa = PBXGroup;
 			children = (
@@ -91,15 +100,14 @@
 		36CD427A2B827400008304C2 /* GetMem */ = {
 			isa = PBXGroup;
 			children = (
+				36CD427B2B827400008304C2 /* GetMemApp.swift */,
+				366B98A62B84B44B00BE5467 /* ContenView.swift */,
+				366B98AD2B87AB5500BE5467 /* Views */,
 				366B98942B828E8400BE5467 /* ViewModels */,
 				36CD42962B828BD4008304C2 /* Models */,
 				36CD42932B828B27008304C2 /* Services */,
 				36CD428C2B827FDB008304C2 /* Helpers */,
 				36CD42892B827E44008304C2 /* Components */,
-				36CD427B2B827400008304C2 /* GetMemApp.swift */,
-				366B98A42B84B40900BE5467 /* FavoriteMems.swift */,
-				36CD427D2B827400008304C2 /* MainView.swift */,
-				366B98A62B84B44B00BE5467 /* ContenView.swift */,
 				36CD427F2B827407008304C2 /* Assets.xcassets */,
 				36CD42812B827407008304C2 /* Preview Content */,
 			);
@@ -228,7 +236,7 @@
 				36CD42952B828B48008304C2 /* NetworkServices.swift in Sources */,
 				36CD428E2B82801A008304C2 /* GMTextField.swift in Sources */,
 				366B98932B828E1100BE5467 /* GMErrors.swift in Sources */,
-				366B98A52B84B40900BE5467 /* FavoriteMems.swift in Sources */,
+				366B98A52B84B40900BE5467 /* FavoriteMemsView.swift in Sources */,
 				366B989E2B83AFD000BE5467 /* CleanRepeatButton.swift in Sources */,
 				36CD42982B828BE9008304C2 /* Mems.swift in Sources */,
 				36CD427E2B827400008304C2 /* MainView.swift in Sources */,

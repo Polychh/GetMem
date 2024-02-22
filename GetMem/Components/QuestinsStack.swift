@@ -22,6 +22,4 @@ struct QuestinsStack: View {
     }
 }
 
-#Preview {
-    QuestinsStack()
-}
+

@@ -11,6 +11,7 @@ struct GMButton: View {
     var action: () -> Void
     var actionToAniamate: () -> Void
     var isEnabled: Bool
+    
     var body: some View {
         VStack{
             Button {
@@ -18,8 +19,9 @@ struct GMButton: View {
                 withAnimation(Animation.spring().speed(0.2)) {
                     actionToAniamate()
                 }
+                
             } label: {
-                Text("Получить предсказания!")
+                Text("Получить предсказание!")
                     .frame(maxWidth: 200, maxHeight: 30)
                     .foregroundColor(.white)
             }

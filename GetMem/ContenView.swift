@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct ContentView: View {
     @StateObject var persistanceController = PersistanceController()
     var body: some View {
@@ -19,7 +17,7 @@ struct ContentView: View {
                         Image(systemName: "house")
                         Text("Главная")
                     }
-                FavoriteMems(persistanceController: persistanceController)
+                FavoriteMemsView(persistanceController: persistanceController)
                     .tabItem {
                         Image(systemName: "star")
                         Text("Избранное")
@@ -30,6 +28,4 @@ struct ContentView: View {
         .accentColor(.purple)
     }
 }
-//#Preview {
-//    ContentView()
-//}
+

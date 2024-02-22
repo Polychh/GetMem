@@ -10,6 +10,7 @@ import SwiftUI
 struct GMLikeDislikeButtons: View {
     var actionLike: () -> Void
     var actionDisLike: () -> Void
+    
     var body: some View {
         HStack{
             Button(action: {
@@ -34,16 +35,6 @@ struct GMLikeDislikeButtons: View {
             .foregroundColor(.white)
             .clipShape(Circle())
         }
-        .background(.orange)
     }
 }
 
-
-#Preview {
-    GMLikeDislikeButtons {
-        print("Done")
-    } actionDisLike: {
-        print("Done1")
-    }
-
-}

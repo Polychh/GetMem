@@ -10,6 +10,7 @@ import SwiftUI
 struct FavoriteCell: View {
     let image: String
     let question: String
+    
     var body: some View {
         HStack{
             AsyncImage(url: URL(string: image)) { image in
@@ -32,11 +33,6 @@ struct FavoriteCell: View {
           
         }
         .padding(8)
-        //.compositingGroup()
         .background(RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(color: .purple, radius: 5, x: 0, y: 0))
     }
-}
-
-#Preview {
-    FavoriteCell(image: "https://i.imgflip.com/1tkjq9.jpg", question: "Хочу мем")
 }
